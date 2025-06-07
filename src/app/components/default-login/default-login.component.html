@@ -3,9 +3,9 @@
     <img>
     <h2>{{ title }}</h2>
     <ng-content></ng-content>
-    <button class="btn-primary">{{ primaryBtnText }}</button>
+    <button class="btn-primary" (click)="submit()">{{ primaryBtnText }}</button>
     <div><span>or</span></div>
-    <button class="btn-secondary"> {{ secondaryBtnText }}</button>
+    <button class="btn-secondary" (click)="navigate()"> {{ secondaryBtnText }}</button>
 </section>
 <section class="main-section">
     <p>Internet Banking</p>
