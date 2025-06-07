@@ -3,6 +3,8 @@ title="Login to Internet Banking"
 primaryBtnText="Login"
 secondaryBtnText="Sign Up">
     <form [formGroup]="loginForm">
-        
+        <app-input formControlName="email" inputName="email" type="email" label="E-mail" placeholder="example@example.com"></app-input>
+        <app-input formControlName="password" inputName="password" type="password" label="Password" placeholder="********"></app-input>
+        <span>I forgot my password</span>
     </form>
 </app-default-login>
