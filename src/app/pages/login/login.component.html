@@ -3,7 +3,8 @@ title="Login to Internet Banking"
 primaryBtnText="Login"
 secondaryBtnText="Sign Up"
 (submit)="submit()"
-(navigate)="navigate()">
+(navigate)="navigate()"
+[disablePrimaryBtn]="!loginForm.valid">
     <form [formGroup]="loginForm">
         <app-input formControlName="email" inputName="email" type="email" label="E-mail" placeholder="example@example.com"></app-input>
         <app-input formControlName="password" inputName="password" type="password" label="Password" placeholder="********"></app-input>
