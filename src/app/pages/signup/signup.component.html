@@ -1,0 +1,14 @@
+<app-default-login
+title="Create your Account"
+primaryBtnText="Sign Up"
+secondaryBtnText="Login"
+(submit)="submit()"
+(navigate)="navigate()"
+[disablePrimaryBtn]="!SignupForm.valid">
+    <form [formGroup]="SignupForm">
+        <app-input formControlName="name" inputName="name" type="text" label="Name" placeholder="Your Name"></app-input>
+        <app-input formControlName="email" inputName="email" type="email" label="E-mail" placeholder="example@example.com"></app-input>
+        <app-input formControlName="password" inputName="password" type="password" label="Password" placeholder="********"></app-input>
+        <app-input formControlName="passwordConfirm" inputName="passwordConfirm" type="password" label="Confirm the Password" placeholder="********"></app-input>
+    </form>
+</app-default-login>
