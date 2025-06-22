@@ -5,16 +5,16 @@
 
     <section id="menu-buttons">
         <div>
-            <button>Transfer money</button>
-            <button>Extract</button>
-            <button>Loan</button>
+            <button (click)="transferMoney()">Transfer money</button>
+            <button (click)="extract()">Extract</button>
+            <button (click)="loan()">Loan</button>
             
         </div>
         <div>
-            <button>Mail</button>
-            <button>Points with People</button>
-            <button>My account</button>
+            <button (click)="mail()">Mail</button>
+            <button (click)="pointsWithPeople()">Points with People</button>
+            <button (click)="accessAccount()">My account</button>
         </div>
     </section>
-    <button>Logout</button>
+    <button (click)="logout()">Logout</button>
 </body>
