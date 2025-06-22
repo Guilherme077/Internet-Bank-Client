@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
+  userHtml: string = '';
 
+  ngOnInit() {
+    const username = sessionStorage.getItem('username');
+    if (username) {
+      this.userHtml = username;
+    }
+  }
 }
